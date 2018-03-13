@@ -147,7 +147,7 @@ def decimal_to_map_9999_esp(number):
     elif number==1000:
         return 'mil'
     elif number%1000==0 and number>1000 and number<10000:
-        return words_1_10_esp[thousand]+'mil'  
+        return words_1_10_esp[thousand]+' '+'mil'  
     else:
         if thousand==1:
             return 'mil'+' '+decimal_to_map_999_esp(int(str(number)[1:]))
