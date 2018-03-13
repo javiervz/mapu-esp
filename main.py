@@ -10,7 +10,7 @@ app = Flask(__name__)
 def home():
   return render_template("home.html")
 
-@app.route('/recomendation', methods=["POST"])
+@app.route('/', methods=["POST"])
 def transformed():
   text = request.form['text']
   #output = list()
